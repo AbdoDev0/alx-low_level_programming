@@ -1,11 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-
-int _abs(int n)
+/**
+ * _abs - computes the absolute value of an int
+ * @i : value to compute
+ *
+ * Return: absolute value of i
+ */
+int _abs(int i)
 {
-    return abs(n);
+
+	if (i < 0)
+	{
+		i = i * (-1);
+		return (i);
+	}
+	else
+		return (i);
 }
 
